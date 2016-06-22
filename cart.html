@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CollegeCult- T-Shirts, Shoes, Skirts, Heels, Posters, Gifts and so much more you love. </title>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   
+</head>
+<body ng-app="angularApp" ng-controller="cartContent" style="font-family:cordia new">
+ <nav class="purple darken-2" style="position:fixed;z-index:999"><!-- side navbar starts here-->
+         
+     <ul id="slide-out" class="side-nav">
+            <li class="purple darken-3" style="width:100% text-align:center">
+               <ul > 
+                   <li ><strong style="  color:white;font-size:35px;">Full Store </strong> 
+                       <span class=""></span>   </li>
+            
+
+               </ul>
+                
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header" ><img src="img/ICONS/menu/businesswomanred_24px.png"> <span style="   font-size:25px;">HER</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="gstore.html?gender=F&type=skirts"><img src="img/ICONS/menu/skirt_25px.png">
+                                    <span style="   font-size:25px;"> Skirts</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=shorts">
+                                    <img src="img/ICONS/menu/shorts_25px.png"> <span style="   font-size:25px;"> Shorts</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=tops"><img src="img/ICONS/menu/clothes_25px.png"> <span style="   font-size:25px;"> Tops</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=shoes"><img src="img/icons/menu/womens_shoe_25px.png"> <span style="   font-size:25px;"> Shoes</span></a></li>
+                               
+                                <li><a href="gstore.html?gender=F&type=lingerie"><img src="img/icons/menu/bra_25px.png">  <span style="   font-size:25px;"> Undergarments</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=Jwellery"><img src="img/ICONS/menu/jewelry_25px.png"> <span style="   font-size:25px;"> Jwellery</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><img src="img/ICONS/menu/businessman_2%2024px.png"><span style="   font-size:25px;"> HIS</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="gstore.html?gender=M&type=T-Shirts"><img src="img/ICONS/menu/clothes_green_25px.png"> <span style="   font-size:25px;"> T-Shirts</span></a></li>
+                                <li><a href="gstore.html?gender=M&type=Shoes"><img src="img/icons/menu/trainers_25px.png"> <span style="   font-size:25px;"> Shoes</span></a></li>
+                                <li><a href="gstore.html?gender=M&type=Undergarments"><img src="img/ICONS/menu/shorts_green_25px.png">  <span style="   font-size:25px;"> Shorts</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><img src="img/icons/menu/gift_24px.png"> <span style="   font-size:25px;"> GIFTS</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="   font-size:25px;"> Posters</span></a></li>
+                                <li><a href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="   font-size:25px;"> Mugs</span></a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><img src="img/ICONS/menu/add_tag_25px.png"> <span style="   font-size:25px;">CUSTOM</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#"> <img src="img/ICONS/library_25px.png"> <span style="   font-size:25px;"> Your College</span></a></li>
+                                <li><a href="Cities.html"><img src="img/icons/eiffel_tower_filled_25px.png"> <span style="   font-size:25px;"> Your City</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        
+        </ul><!-- slider menu ends here -->
+        <ul class="right hide-on-med-and-down">
+
+
+
+<li><a href="#" class="brand-logo center">CollegeCult</a></li>
+
+      
+            <!--|| loginTry" -->
+          <li class="loginbtn" ng-click="loginBtn()" ng-hide="loggedIn"  >
+                <a href="login.html?id=login" >Login</a>
+            </li> <li class="loginbtn" ng-click="loginBtn()" ng-hide="loggedIn"  >
+                <a href="login.html?id=registeration" >Sign Up</a>
+            </li>
+            
+          
+            <li  style="" ng-show="loggedIn">
+                <a class="dropdown-button" data-activates="dropdown1" href="#!" ><i class="mdi-navigation-arrow-drop-down left"></i>
+                <span ng-bind="name"></span></a>
+                
+                   
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="myAccount.html">My Account</a></li>
+             <li><a href="cart.html">Cart(<span ng-bind="localStoreItemCount"></span> Items) </a></li>
+            <li><a href="wishlist.html">Wishlist(<span ng-bind="wishlistCount"></span> Items) </a></li>
+          <li><a href="myorders.html">My Orders</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+            </li>  
+         
+           
+        </ul><!-- horizontal navbar ends here -->
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+    </nav> <!-- navbar ends here-->
+
+ <div style="margin-top:60px"></div>
+
+
+
+<div class="col m9 s12" ng-if="localStoreItemCount>0" ><!--ng-if="storeCount[0]>0"-->
+    <center><h2 style="margin-left:15px; ;font-size: 65px">Your Shopping Cart</h2></center>
+  <ul class="row productlist">
+  <li class="col l12 m12 s12">
+   <div class="card">
+
+    <div class="card-content">
+    <div style="width:100%;margin-left:25px" ng-model="items">
+
+
+	<div class="row" style="border-bottom:1px solid #ccc">
+    <div class="col l5">Item Detail</div>
+	
+	<div class="col l1">Price</div>
+	<div class="col l1">Quantity</div>
+	<div class="col l1" style="text-align:center">Delivery</div>
+	<div class="col l2" style="text-align:center">Subtotal</div>
+        <div class="col l2" style="text-align:center">Quick Checkout</div>
+
+	</div>
+
+       
+      <div class="row" ng-repeat="item in items"  >
+       
+	<div class="col s12 l3">
+        <center>
+            <a href="productdetail.html?productId={{item.productId}}">
+                <img style="height:150px;width:150px" ng-src="img/products/{{item.productId}}/{{item.productId}}.jpg">
+            </a>
+            <br>
+                <a href="#" style="text-decoration:none"  ng-click="remove(item.productId,email, item.quantity)"> Remove</a>
+        </center>
+    </div>
+        
+     
+        
+        
+ 
+          
+          <div class="col s12 l2" style="text-align:center">
+            
+            <a href="productdetail.html?productId={{item.productId}}">{{item.name}}</a><br> 
+        Size: <a href="">M
+        <img src="img/ICONS/length_25px.png"></a>
+        </div>
+	
+	<div class="col s12 l1" style="color:red; text-align:center">
+        {{item.price | currency}}<br>{{item.discount}}% OFF <br>
+    </div>
+	
+	<div class="col s6 l1">
+		<a href="#"  ng-click="increase(item.productId,email,item.quantity)"><img src="img/icons/ic_add_black_24dp.png"></a>
+		<span ng-model="item.quantity">{{item.quantity}}</span> 
+		<a href="#" ng-click="decrease(item.productId,email,item.quantity-1)"><img src="img/icons/ic_remove_black_24dp.png"></a>
+	</div>
+	
+	<div class="col s6 l1">Free Delivery</div>
+	
+	<div class="col s12 l2" style="text-align:center">{{item.quantity*item.price-item.quantity*item.discount*item.price/100 | currency}}<br>
+		<span class="saving" style="color:#ff1744; font-size:25px;">YOU SAVE: {{item.quantity*item.discount*item.price/100 | currency}}</span>
+	</div>
+	
+	
+	<div class="col s12 l2" style="text-align:center">
+       <a href="orderSummary.html?orderType=single&productId={{item.productId}}"><img src="img/icons/checkout_32px.png"/></a>
+        </div>
+</div>
+</div>
+    </div>
+    <div class="card-action row">
+        <div style="float:right;">
+        Total Savings: <span ng-bind="youSave | currency"></span><br> 
+        You Pay: <span ng-bind="youPay | currency"></span><br>
+              <a href="orderSummary.html" ng-show="loggedIn"  class="waves-effect waves-light btn">CHECKOUT (<span ng-bind="localStoreItemCount"></span> Items)</a>
+        <a href="login.html?id=login&from=cart" ng-hide="loggedIn"  class="waves-effect waves-light btn">CHECKOUT (<span ng-bind="localStoreItemCount"></span> Items)</a>
+            </div>
+   
+    </div>
+  </div>
+</li>
+</ul>
+
+</div>
+
+
+
+
+
+
+<div class="col m9 s12" ng-if="localStoreItemCount<1" ><!--ng-if="storeCount[0]<0"-->
+ 
+  <ul class="row productlist">
+  <li class="col l12 m12 s12">
+   <div class="card">
+
+    <div class="card-content">
+   
+<h3 style="font-family: cordia new">Your Shopping Cart is empty.</h3>
+
+Your Shopping Cart lives to serve. Give it purpose--fill it with books, CDs, videos, DVDs, electronics, and more.
+Continue shopping on the Amazon.in homepage, learn about today's deals, or visit your Wish List.
+
+    </div>
+    <div class="card-action row">
+     <a href="index.html" style="float:right;" class="waves-effect waves-light btn">Go to store</a>
+    </div>
+  </div>
+</li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+<div ng-include src="partials/footer.html"></div>
+
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+<!--my angular scripts-->
+<script type="text/javascript" src="jquery/jquery.js"></script>
+
+<!--materialize css-->
+<link rel="stylesheet" href="materialize/css/materialize.min.css"> 
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+<!--my css-->
+<link href="css/index.css" rel="stylesheet">
+
+<!--angular libraries-->
+<script type="text/javascript" src="angular/lib/angular.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-resource.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-webstorage.min.js"></script>
+
+<!--my javascripts-->
+<script type="text/javascript" src="javascript/javascript.js"></script>
+	<script src="angular/controllers/cart/cartController.js"></script>
+
+</body>
+</html>

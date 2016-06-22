@@ -1,0 +1,86 @@
+<nav class="purple darken-3">
+  <ul id="slide-out" class="side-nav">
+      <li style="color: black"><strong>COLLEGECULT</strong> <span style="font-size: 20px;font-family: cordia new">..Something for new you.</span><br></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header" href="her.html">HER<i class="mdi-navigation-arrow-drop-down"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Skirts</a></li>
+                <li><a href="#!">Tops & T-Shirts</a></li>
+                <li><a href="#!">Shoes</a></li>
+                <li><a href="#!">Stockings</a></li>
+                <li><a href="#!">Lingerie & Undergarments</a></li>
+                <li><a href="#!">Jwellery</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">HIS<i class="mdi-navigation-arrow-drop-down"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">T-Shirts</a></li>
+                <li><a href="#!">SHOES</a></li>
+                <li><a href="#!">UNDERGARMENTS</a></li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">GIFTS STORE<i class="mdi-navigation-arrow-drop-down"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Posters</a></li>
+                <li><a href="#!">Mugs</a></li>
+                <li><a href="#!">Custom Printed</a></li>
+                <li><a href="#!">Ecstasy!!!</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+        <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">MADE FOR...YOU<i class="mdi-navigation-arrow-drop-down"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Your College</a></li>
+                <li><a href="#!">Your City</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="#" style="font-family:cordia new"class="brand-logo center">CollegeCult</a></li>
+    <!--  <li  class="active"><a href="his.html">HIS</a></li>
+      <li ><a href="her.html">HER</a></li>
+      <li><a href="unisex.html">UNISEX</a></li>
+      <li><a href="deals.html">DEALS</a></li>
+      <li><a href="xstores.html">EXCLUSIVES</a></li>
+      <li><a href="colleges.html">COLLEGES</a></li>
+      <li><a href="cities.html">CITIES</a></li>-->
+      <li ng-click="searchBtn()" ng-show="loginTry" class="loginbtn"><a href="#" ><img src="img/icons/ic_search_white_24dp.png"> SEARCH</a></li>
+      <li ng-click="loginBtn()" ng-hide="loggedIn || loginTry" class="loginbtn"><a href="#" ><img src="img/icons/ic_account_circle_white_24dp.png"> LOGIN</a></li>
+      <li ng-show="loggedIn"><a href="wishlist.html"><img src="img/icons/ic_favorite_white_24dp.png"><span ng-bind="wishlist[0]"> Items</span></a></li>
+       <li  ng-show="loggedIn"><a href="cart.html"><img src="img/icons/ic_shopping_cart_white_24dp.png"><span ng-bind="storeCount[0]"></span> Items</a></li>
+      <li ng-show="loggedIn" style="width: 100px;">
+      <a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="mdi-navigation-arrow-drop-down left"></i>ME<span ng-bind="email"></span></a></li>  
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!">First</a></li>
+          <li><a href="#!">Third</a></li>
+          <li><a href="#!">Fourth</a></li>
+        </ul>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i>Full Store</a>
+</nav> 

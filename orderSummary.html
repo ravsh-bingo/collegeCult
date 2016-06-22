@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CollegeCult- T-Shirts, Shoes, Skirts, Heels, Posters, Gifts and so much more you love. </title>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   
+</head>
+<body ng-app="angularApp" ng-controller="orderSummary">
+<nav class="purple darken-2" style="position:fixed;z-index:999"><!-- side navbar starts here-->
+         
+     <ul id="slide-out" class="side-nav">
+            <li class="purple darken-3" style="width:100% text-align:center">
+               <ul > 
+                   <li ><strong style="font-family:cordia new; color:white;font-size:35px;">Full Store </strong> 
+                       <span class=""></span>   </li>
+            
+
+               </ul>
+                
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header" ><img src="img/ICONS/menu/businesswomanred_24px.png"> <span style="font-family:cordia new;  font-size:25px;">HER</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="gstore.html?gender=F&type=skirts"><img src="img/ICONS/menu/skirt_25px.png">
+                                    <span style="font-family:cordia new;  font-size:25px;"> Skirts</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=shorts">
+                                    <img src="img/ICONS/menu/shorts_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Shorts</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=tops"><img src="img/ICONS/menu/clothes_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Tops</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=shoes"><img src="img/icons/menu/womens_shoe_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Shoes</span></a></li>
+                               
+                                <li><a href="gstore.html?gender=F&type=lingerie"><img src="img/icons/menu/bra_25px.png">  <span style="font-family:cordia new;  font-size:25px;"> Undergarments</span></a></li>
+                                <li><a href="gstore.html?gender=F&type=Jwellery"><img src="img/ICONS/menu/jewelry_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Jwellery</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><img src="img/ICONS/menu/businessman_2%2024px.png"><span style="font-family:cordia new;  font-size:25px;"> HIS</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="gstore.html?gender=M&type=T-Shirts"><img src="img/ICONS/menu/clothes_green_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> T-Shirts</span></a></li>
+                                <li><a href="gstore.html?gender=M&type=Shoes"><img src="img/icons/menu/trainers_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Shoes</span></a></li>
+                                <li><a href="gstore.html?gender=M&type=Undergarments"><img src="img/ICONS/menu/shorts_green_25px.png">  <span style="font-family:cordia new;  font-size:25px;"> Shorts</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><img src="img/icons/menu/gift_24px.png"> <span style="font-family:cordia new;  font-size:25px;"> GIFTS</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="gstore.html?gender=U&type=Posters" ><img src="img/ICONS/sheet_of_paper_26px.png"> <span style="font-family:cordia new;  font-size:25px;"> Posters</span></a></li>
+                                <li><a href="gstore.html?gender=U&type=Mugs" ><img src="img/ICONS/beer_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Mugs</span></a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header"><img src="img/ICONS/menu/add_tag_25px.png"> <span style="font-family:cordia new;  font-size:25px;">CUSTOM</span><i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#"> <img src="img/ICONS/library_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Your College</span></a></li>
+                                <li><a href="Cities.html"><img src="img/icons/eiffel_tower_filled_25px.png"> <span style="font-family:cordia new;  font-size:25px;"> Your City</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        
+        </ul><!-- slider menu ends here -->
+        <ul class="right hide-on-med-and-down">
+
+
+
+<li><a href="#" style="font-family:cordia new"class="brand-logo center">CollegeCult</a></li>
+
+      
+            <!--|| loginTry" -->
+          <li class="loginbtn" ng-click="loginBtn()" ng-hide="loggedIn"  >
+                <a href="login.html?id=login" >Login</a>
+            </li> <li class="loginbtn" ng-click="loginBtn()" ng-hide="loggedIn"  >
+                <a href="login.html?id=registeration" >Sign Up</a>
+            </li>
+            
+          
+            <li  style="" ng-show="loggedIn">
+                <a class="dropdown-button" data-activates="dropdown1" href="#!" ><i class="mdi-navigation-arrow-drop-down left"></i>
+                <span ng-bind="name"></span></a>
+                
+                   
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="myAccount.html">My Account</a></li>
+             <li><a href="cart.html">Cart(<span ng-bind="localStoreItemCount"></span> Items) </a></li>
+            <li><a href="wishlist.html">Wishlist(<span ng-bind="wishlistCount"></span> Items) </a></li>
+          <li><a href="myorders.html">My Orders</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+            </li>  
+         
+           
+        </ul><!-- horizontal navbar ends here -->
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+    </nav> <!-- navbar ends here-->
+ 
+<!-- navbar ends here-->
+    <div style="margin-top:60px"></div>
+<div class="card  row " ng-show="showAddAddress" >
+    <center><h4 style="font-family: cordia new; font-size: 40px;">Set your delivery address</h4></center>
+    <div class="card-content">
+        <form>
+            <div class="row">
+                <div class="input-field col s6 l6 m6" style="">
+                    <input id="address" type="text" class="validate" ng-model="address" ><label for="address">Address</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6 l6 m6" style="margin:auto">
+                    <input id="landmarka" type="text" class="" ng-model="landmark"/><label for="landmarka">Landmark</label>
+                </div>
+   
+            </div>
+            <div class="row">
+                <div class="input-field col s3 l3 m3" style="">
+                      <select class="browser-default" ng-model="city">
+                        <option value="" disabled selected>Choose your City</option>
+                        <option value="{{city.name}}" ng-repeat="city in cities">{{city.name}}</option>
+                      </select>
+                </div>
+                <div class="input-field col s3 l3 m3" style="">
+                    <input id="pin" type="number" class="validate" ng-model="pincode" maxlength="6" minlength="6"><label for="pin">Pincode</label>
+                </div>
+            </div>
+       </form> 
+    </div>
+    <div class="card-action row">
+        <input type="submit" style=""class="btn " ng-click="saveAddress()" name="saveAddress" value="Save">
+    </div>
+</div>
+    
+    
+    
+    
+<div class="card  row " ng-show="showChangeAddress" >
+    <center><h4 style="font-family: cordia new; font-size: 40px;">Choose your delivery address</h4></center>
+    <div class="card-content">
+    <div class="col s3" ng-repeat="address in addresses" ng-click="applyAddress(address)">
+        <span ng-bind="address.address"></span><br>
+          <span ng-bind="address.city"></span>  <span ng-bind="address.pincode"></span>
+        </div>
+    </div>
+ <br><p></p>
+</div>
+
+
+
+
+  <div class="row">
+  
+      
+
+      
+      
+
+      
+      
+      
+      
+      
+   <div class="card" ng-hide="showAddress">
+ 
+    <div class="card-content">
+ <center><h4 style="font-family: cordia new; font-size: 40px;">SHIPPING DETAILS</h4></center>
+ <table style="width:100%;margin-left:25px">
+
+<tr style="border-bottom:1px solid #ccc">
+  <td >EMAIL</td>
+  <td>DELIVERY ADDRESS</td>
+  <td>EXPECTED DELIVERY</td>
+  <td> </td>
+  
+</tr>
+<tr>
+  <td>{{email}}</td>
+    <td class="" ng-hide="addressTrue" style="color:red">No address has been found for your profile Please 
+        <a href="" ng-click="addAddress()">Click here</a> to set delivery address</td>
+    <td ng-show="addressTrue"><span ng-bind="deliveryAddress.address"></span><br><span ng-bind="deliveryAddress.city"></span>
+         - <span ng-bind="deliveryAddress.pincode"></span><br>
+        <a href="#" ng-click="changeAddress()" >Change? </a> | <a href="#" ng-click="addAddress()"> New Address?</a></td>
+  <td>Within 2-4 working days<br><a href="">Delivery Policy</a></td>
+    <td><a href="orderSummary.html" style=""  class="waves-effect waves-light btn" ng-show="COD">PLACE ORDER</a></td>
+</tr>
+</table>
+ </div>
+  </div>
+
+
+
+
+   <div class="col l12 m6 s12 " >
+   <div class="card">
+ 
+    <div class="card-content">
+
+
+      <center><h4 style="font-family: cordia new; font-size: 40px;">Review Your Order</h4></center>
+    <div style="width:100%;margin-left:25px" ng-model="items">
+
+
+	<div class="row" style="border-bottom:1px solid #ccc">
+    <div class="col l5" style="text-align:center">Item Detail</div>
+	
+	<div class="col l1" style="text-align:center">Price</div>
+	<div class="col l1" style="text-align:center">Quantity</div>
+	<div class="col l2" style="text-align:center">Delivery</div>
+	<div class="col l3" style="text-align:center">Subtotal</div>
+        
+
+	</div>
+
+       
+      <div class="row" ng-repeat="item in items"  >
+       
+	<div class="col s12 l3">
+        <center>
+            <a href="productdetail.html?productId={{item.productId}}">
+                <img style="height:150px;width:150px" ng-src="img/products/{{item.productId}}/{{item.productId}}.jpg">
+            </a>
+            <br>
+                <a href="#" style="text-decoration:none"  ng-click="remove(item.productId,email, item.quantity)"> Remove</a>
+        </center>
+    </div>
+        
+     
+        
+        
+ 
+          
+          <div class="col s12 l2" style="text-align:center">
+            
+            <a href="productdetail.html?productId={{item.productId}}">{{item.name}}</a><br> 
+        Size: <a href="">M
+        <img src="img/ICONS/length_25px.png"></a>
+        </div>
+	
+	<div class="col s12 l1" style=" text-align:center">
+        {{item.price | currency}}<br><span style="color:red; text-align:center" ng-bind="item.discount + '% OFF'"></span> <br>
+    </div>
+	
+	<div class="col s6 l1">
+		<a href="#"  ng-click="increase(item.productId,email,item.quantity)"><img src="img/icons/ic_add_black_24dp.png"></a>
+		<span ng-model="item.quantity">{{item.quantity}}</span> 
+		<a href="#" ng-click="decrease(item.productId,email,item.quantity-1)"><img src="img/icons/ic_remove_black_24dp.png"></a>
+	</div>
+	
+	<div class="col s6 l2" style="text-align:center">Free Delivery</div>
+	
+	<div class="col s12 l3" style="text-align:center">{{item.quantity*item.price-item.quantity*item.discount*item.price/100 | currency}}<br>
+		<span class="saving" style="color:#ff1744; font-size:25px;">YOU SAVE: {{item.quantity*item.discount*item.price/100 | currency}}</span>
+	</div>
+	
+
+</div>
+</div>
+ </div>
+ <div class="card-action row">
+   
+     <span style="float:right"> Total order value: <span ng-bind="youPay | currency"></span><br>
+     Total order savings: <span ng-bind="youSave | currency"></span> </span>
+    </div>
+  </div>
+</div>
+
+
+<div class="col l12 m6 s12 " >
+   <div class="card">
+ 
+    <div class="card-content">
+      <center><h4 style="font-family: cordia new; font-size: 40px;">MAKE PAYMENT</h4></center>
+
+       <table style="width:100%;margin-left:25px" >
+
+<tr style="border-bottom:1px solid #ccc">
+  <td >SELECT PAYMENT METHOD</td>
+ </tr>
+<tr><td><input class="with-gap" name="group1" type="radio" id="cod" ng-model="$scope.COD"/><label for="cod">COD</label></td></tr>
+<tr><td><input class="with-gap" name="group1" type="radio" id="ib" ng-model="$scope.other"/><label for="ib">Internet Banking</label><br></td></tr>
+<tr><td><input class="with-gap" name="group1" type="radio" id="dc" ng-model="$scope.other"/><label for="dc">Debit Card</label><br></td></tr>
+<tr><td><input class="with-gap" name="group1" type="radio" id="cc" ng-model="$scope.other"/><label for="cc">Credit Card</label><br></td></tr>
+</table>
+
+ </div>
+
+  <div class="card-action row">
+   
+     <a href="orderSummary.html" style="float:right;" class="waves-effect waves-light btn" ng-show="other">MAKE PAYMENT</a>
+      <a href="orderSummary.html" style="float:right;" class="waves-effect waves-light btn" ng-show="COD">PLACE ORDER</a>
+    </div>
+    </div>
+      
+
+
+    
+    
+  </div>
+
+
+</div>
+
+ 
+
+
+
+<script> 
+    
+   
+    
+    function getQueryVariable(variable)
+  {
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+  }</script>
+
+
+
+
+
+<div ng-include src="'partials/footer.html'"></div>
+
+
+
+<!--my angular scripts-->
+<script type="text/javascript" src="jquery/jquery.js"></script>
+
+<!--materialize css-->
+<link rel="stylesheet" href="materialize/css/materialize.min.css"> 
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<!--<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+<!--my css-->
+<link href="css/index.css" rel="stylesheet">
+
+<!--angular libraries-->
+<script type="text/javascript" src="angular/lib/angular.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-resource.min.js"></script>
+<script type="text/javascript" src="angular/lib/angular-webstorage.min.js"></script>
+
+<!--my javascripts-->
+<script type="text/javascript" src="javascript/javascript.js"></script>
+<script type="text/javascript" src="angular/controllers/orderSummary.js"></script>
+
+</body>
+</html>

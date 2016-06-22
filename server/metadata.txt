@@ -1,0 +1,48 @@
+Directory structure and description for server side files 
+------------------------------------
+
+1. auth- files related to login logout and other authentication if any
+------------------------------------------------------------------------
+	checkLogin.php-->checks if the user is logged in.
+
+2. index-all the files related to index.html 
+-----------------------------------------------------	
+	amazingDiscounts.php-->list top 6 discounted items
+	herItems.php-->list top trending items from female section
+	hisItems.php-->lists top trending items from male section
+	gifts_S2C.php--> lists all the gift stores
+	flagships_S2C.PHP-->list flagship store of the website.
+	discounts_S2C.php-->list top discount stores
+	dedicated_S2C.php-->lists dedicated stores which are active
+
+3. order-all the files related to order placement process
+---------------------------------------------------------
+	placeQuickOrder_C2S.php-->places quick buy orders
+	orderSummary_S2C.php--> displays order summary
+
+4. stores-all the files that generates any ad hoc store
+----------------------------------------------------------
+	addtoCart.php-->add item to the cart
+	dedicatedStore_S2C.php-->list items in the dedicated
+	discountStore_S2C.php-->list items in the selected discount store
+	flagshipStore_S2C.PHP--> list items in the selected flagship store
+	genderStore_C2S.php-->list all the items in the gender based store
+	giftStore_S2C.php-->list all the items in the gift store
+
+5. wishlist-all the files related to functionality of wishlist
+--------------------------------------------------------------
+	wishlist_C2S.php--> sends item to wishlist table
+	wishlist_S2C.php--> send json from wishlist table to client
+	wishlistCount.php--> returns the number of items in the wishlist for the user
+
+6. cart-all the files relate to functionality of cart
+--------------------------------------------------------------
+	cartContent_S2C.php-->returns the items in the cart
+	increase_C2S.php--> increase the number of items in the count
+	remove_C2S.php--> removes the item from the cart
+	storeItemCount.php--> returns the number of items in the cart of the user
+	quantityChange_C2S.php--> increase/decrease the number of items in the cart
+
+7. Others
+------------------
+	database.php-->for making database connection, this file will be included in all the files

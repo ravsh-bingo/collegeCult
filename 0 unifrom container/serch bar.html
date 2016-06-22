@@ -1,0 +1,39 @@
+<div class="card-panel hoverable" >
+    <div ng-hide="loginTry"  class="search">
+        <form>
+            <div class="input-field col s5" style="float: left;margin-left: 27px;">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Clothes & Gifts</label>
+            </div>
+            <div class="input-field col s3" style="float: left;margin-left: 20px;">
+                <a class="waves-effect waves-light btn" style="background-color:white;color:black;border:1px solid #e65100">SEARCH</a>
+            </div>
+            <div class="input-field col s3" style="float: right;margin-right: 20px;">
+                <a href="cart.html">
+                    <img src="img/icons/ic_shopping_cart_black_18dp.png">
+                    <span ng-bind="localStoreItemCount"></span> Items
+                </a>
+            </div>
+        </form>
+    </div>
+    
+  <div ng-show="loginTry"  class="login">
+    <form>
+        <div  class="input-field col s5" style="float: left;margin-left: 27px;">
+            <input id="email" type="email" class="validate" value="s" ng-model="email" required>
+            <label for="email">EMAIL</label>
+        </div>
+        <div class="input-field col s5" style="float: left;margin-left: 27px;">
+            <input id="password" type="password" class="validate" value="" ng-model="password" required>
+            <label for="password">PASSWORD</label>
+        </div>
+        <div class="input-field col s3" style="float: left;margin-left: 20px;">
+            <input type="submit" name="submit" ng-click="login()" class="waves-effect waves-light btn" style="background-color:white;color:black;border:1px solid #e65100"value="SIGN IN">
+        </div>
+    </form>
+    <div ng-show="loginFail" style="margin-left: 20px; color:red; text-align: center" class="col s3" style="margin-left: 20px;">
+        <b>&#10006; </b> 
+        <span ng-bind="user.cause"></span>
+    </div>
+</div>
+</div>

@@ -1,0 +1,88 @@
+    <div class="col s2 " style="padding:0px;margin-left:30px; ">
+        <ul class="" >
+            <li>
+                <div class="">ORDER STORE BY</div>
+                <ul style="margin:0px">
+                  <li>
+                      <input  type="radio" name="orderBy" id="discount_order" value="discount" ng-click="orderItems('discount')"><label for="discount_order"> Discount</label>
+                  </li>
+                  <li>
+                      <input type="radio" name="orderBy" id="Price_order" value="price" ng-click="orderItems('price')" ><label for="Price_order">High Price</label>
+                  </li>
+                  <li>
+                      <input type="radio" name="orderBy" id="popularity_order" value="name" ng-click="orderItems('incart')" ><label for="popularity_order">Popularity</label>
+                  </li>
+                </ul>
+             
+            </li>
+          </ul>
+  
+    
+        <strong class="" style="">Filters</strong>    
+   
+      <ul class="">
+          <li>
+            <div class="">SIZE</div><br>
+            
+              <ul>
+                     <li><input  type="checkbox" name="fall_protection" id="fall_protection"  ng-model="filterArray[0].on" ng-change="checkChange()" value="1">  <label for="fall_protection">S</label></li>
+                <li><input type="checkbox" name="programming" id="programming"  ng-model="filterArray[1].on" ng-change="checkChange()" value="1"><label for="programming">M</label></li>
+                <li><input  type="checkbox" name="remote" id="remote"  ng-model="filterArray[2].on" ng-change="checkChange()" value="1">  <label for="remote">L</label></li>
+                <li><input  type="checkbox" name="virtual_wall" id="virtual_wall"  ng-model="filterArray[3].on" ng-change="checkChange()" value="1">  <label for="virtual_wall">XL</label></li>
+             
+              </ul>
+          
+          </li>
+<li>
+<div class="">GENRE</div>
+<ul>
+    <li>
+        <input  type="checkbox" name="noise" id="ComicCult"  ng-model="filterArray[4].on" ng-change="checkChange()" value="60">  <label for="ComicCult">Comic cult</label>
+    </li>
+    <li>
+        <input  type="checkbox" name="Sports" id="SportsCult" ng-model="filterArray[5].on" ng-change="checkChange()" value="70">  <label for="SportsCult">Sports cult</label>
+    </li>
+    <li>
+        <input  type="checkbox" name="Gaming" id="GamingCult" ng-model="filterArray[6].on" ng-change="checkChange()" value="70">  <label for="GamingCult">Gaming cult</label>
+    </li>
+    <li>
+        <input  type="checkbox" name="College" id="CollegeCult" ng-model="filterArray[7].on" ng-change="checkChange()" value="70">  <label for="CollegeCult">College cult</label>
+    </li>
+    <li>
+        <input  type="checkbox" name="Political" id="PoliticalCult" ng-model="filterArray[8].on" ng-change="checkChange()" value="70">  <label for="PoliticalCult">Political cult</label>
+    </li>
+    <li>
+        <input  type="checkbox" name="TvCult" id="TvCult" ng-model="filterArray[9].on" ng-change="checkChange()" value="71">  <label for="TvCult">TV cult</label>
+    </li>
+</ul>
+         
+          </li>
+          
+                <li>
+            <div class="">Category</div>
+              <ul>
+<li><input  type="checkbox" name="noise" id="ComicCult"  ng-model="filterArray[4].on" ng-change="checkChange()" value="60">  <label for="ComicCult">Dresses</label></li>
+<li><input  type="checkbox" name="Sports" id="SportsCult" ng-model="filterArray[5].on" ng-change="checkChange()" value="70">  <label for="SportsCult">Gifts</label></li>
+<li><input  type="checkbox" name="Gaming" id="GamingCult" ng-model="filterArray[6].on" ng-change="checkChange()" value="70">  <label for="GamingCult">Accesories</label></li>
+
+              
+
+               
+              </ul>
+         
+          </li>
+            <li>
+            <br>
+         <span id="price"></span>
+                <div>PRICE</div>
+                <form action="#" STYLE="margin-right:5px;">
+                <p class="range-field">
+      <input type="range" id="test5" min="200" max="2000" ng-model="priceRange" />
+    </p>
+                   Products Upto Rs. <span ng-bind="priceRange"></span>
+  </form>
+                
+            </li>
+        </ul>
+    
+  </div> 
